@@ -7,10 +7,21 @@ defmodule Toolshed.Nerves do
 
   defmacro __using__(_) do
     quote do
-      import IEx.Helpers, except: [h: 1]
-      import Toolshed
+      # Toolshed module is load but not already imported
+      if unquote(Code.ensure_loaded?(Toolshed) and is_nil(__CALLER__.functions[Toolshed])) do
+        IO.warn("""
+        Toolshed is required to be used explicitly before Toolshed.Nerves is used. Instead of:
+
+            use Toolshed.Nerves
+
+        do:
+
+            use Toolshed
+            use Toolshed.Nerves
+        """)
+      end
+
       import Toolshed.Nerves
-      require Toolshed
 
       # If module docs have been stripped, then don't tell the user that they can
       # see them.
