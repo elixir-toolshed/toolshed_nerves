@@ -1,5 +1,8 @@
 # Toolshed.Nerves
 
+[![CircleCI](https://circleci.com/gh/elixir-toolshed/toolshed.svg?style=svg)](https://circleci.com/gh/elixir-toolshed/toolshed_nerves)
+[![Hex version](https://img.shields.io/hexpm/v/toolshed.svg "Hex version")](https://hex.pm/packages/toolshed_nerves)
+
 <!-- README START -->
 
 Making the IEx console friendlier one command at a time
