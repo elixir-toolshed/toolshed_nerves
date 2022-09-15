@@ -16,6 +16,6 @@
   "nerves_uevent": {:hex, :nerves_uevent, "0.1.0", "651111a46be9a238560cbf7946989fc500e5f33d7035fd9ea7194d07a281bc19", [:make, :mix], [{:elixir_make, "~> 0.6", [hex: :elixir_make, repo: "hexpm", optional: false]}, {:property_table, "~> 0.2.0", [hex: :property_table, repo: "hexpm", optional: false]}], "hexpm", "cb0b1993c3ed3cefadbcdb534e910af0661f95c3445796ce8a7c8be3519a4e5f"},
   "nimble_parsec": {:hex, :nimble_parsec, "1.2.3", "244836e6e3f1200c7f30cb56733fd808744eca61fd182f731eac4af635cc6d0b", [:mix], [], "hexpm", "c8d789e39b9131acf7b99291e93dae60ab48ef14a7ee9d58c6964f59efb570b0"},
   "property_table": {:hex, :property_table, "0.2.1", "88ab40972036d150eb8b09c4f1aea7834e5970225afbd787fa5533a80399ef8f", [:mix], [], "hexpm", "eb67da5228c649bdc19647a3bbff721d1d1df893e8d342be7255a6819813164b"},
-  "toolshed": {:git, "https://github.com/mnishiguchi/toolshed.git", "750dbd71ec6b7a3b920b0967f4c367fe28dd0cc1", [branch: "mnishiguchi/remove-nerves-commands"]},
+  "toolshed": {:git, "https://github.com/mnishiguchi/toolshed.git", "998f44e5642bc82d5430e9ed5ca4d01eaf149818", [branch: "mnishiguchi/remove-nerves-commands"]},
   "uboot_env": {:hex, :uboot_env, "1.0.0", "fdbe0afe65436f760cd372b16a58ccf7c76bbad1538f1766826e0ddbcaf80980", [:mix], [], "hexpm", "86754d5eae9643ca3094ee1d749b808f9d6f0d41b990e1191709b5a66c2b0757"},
 }
