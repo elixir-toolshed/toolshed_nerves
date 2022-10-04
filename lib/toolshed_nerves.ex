@@ -31,8 +31,6 @@ defmodule Toolshed.Nerves do
           _ -> " Run h(Toolshed.Nerves) for more info."
         end
 
-      Toolshed.Autocomplete.set_expand_fun()
-
       IO.puts([
         IO.ANSI.color(:rand.uniform(231) + 1),
         "Toolshed.Nerves",
