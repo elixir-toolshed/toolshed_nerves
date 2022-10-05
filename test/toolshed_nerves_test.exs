@@ -3,7 +3,6 @@ defmodule Toolshed.NervesTest do
   import ExUnit.CaptureIO
 
   test "__using__ imports helper functions" do
-    use Toolshed
     use Toolshed.Nerves
 
     assert __ENV__.functions[Toolshed] == [
@@ -51,19 +50,5 @@ defmodule Toolshed.NervesTest do
              {:reboot!, 0},
              {:uname, 0}
            ]
-  end
-
-  test "print warning message when Toolshed module is load but not already imported" do
-    assert """
-           \e[33mwarning: \e[0mToolshed is required to be used explicitly before Toolshed.Nerves is used. Instead of:
-
-               use Toolshed.Nerves
-
-           do:
-
-               use Toolshed
-               use Toolshed.Nerves
-
-           """ <> _ = capture_io(:standard_error, fn -> use Toolshed.Nerves end)
   end
 end
