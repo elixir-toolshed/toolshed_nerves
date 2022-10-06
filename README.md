@@ -9,7 +9,6 @@ Making the IEx console friendlier one command at a time
 
 To use the helpers, run:
 
-    iex> use Toolshed
     iex> use Toolshed.Nerves
 
 Add this to your `.iex.exs` to load the helpers automatically.
